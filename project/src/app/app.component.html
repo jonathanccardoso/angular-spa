@@ -1,0 +1,16 @@
+<h3>Hello World</h3>
+
+<h1>Tarefas - adicionar</h1>
+
+<!--ngModel é pra Modelo de formulário! -->
+<input type="text" [(ngModel)]="task">
+<!--criar evento e metodo de action -->
+<button type="button" (click)="add()">Adicionar a Lista</button>
+<ul>
+	<li *ngFor="let item of tasks">
+		{{item}}
+	</li>
+</ul>
+
+<!-- listagem com components
+<app-contatos-listagem></app-contatos-listagem> -->

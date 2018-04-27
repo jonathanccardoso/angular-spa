@@ -1,0 +1,15 @@
+<!---<p>
+  contatos-listagem works!
+</p>
+
+html do component-->
+
+<h2>Listagem feita pelo component</h2>
+
+<ul>
+	<!-- *ng é uma tag (uma diretiva) da lista de contatos
+, criou a variavel c e contatos se refere ao c-->
+	<li *ngFor="let c of contatos">
+		{{c.id}} - {{c.nome}}
+	</li>
+</ul>
